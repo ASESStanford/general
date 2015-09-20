@@ -1,0 +1,31 @@
+input, button {
+	border: 0;
+	height: 3em;
+	line-height: 2em;
+	vertical-align: middle;
+	outline: none;
+}
+
+input[type=text] {
+	background: $white;
+}
+
+input::-webkit-input-placeholder {
+	color: $text-color;
+}
+input::-moz-placeholder {
+	color: $text-color;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+	color: $text-color;
+}
+input:-ms-input-placeholder {
+	color: $text-color;
+}
+
+select {
+	background: $white;
+	border: none;
+	display: inline-block;
+	font-size: 1.25em;
+}

@@ -1,0 +1,37 @@
+.blue-text {
+	color: $blue;
+}
+.blue-med-text {
+	color: lighten($blue, 12%);
+}
+.blue-light-text {
+	color: $blue-light;
+}
+.green-text {
+	color: $green;
+}
+.green-light-text {
+	color: $green-light;
+}
+.white-text {
+	color: $white;
+}
+.light-text {
+	color: $light;
+}
+
+.blue-bg {
+	background-color: $blue;
+}
+.green-bg {
+	background-color: $green;
+}
+.orange-bg {
+	background-color: $green;
+}
+.yellow-bg {
+	background-color: $green-light;
+}
+.light-bg {
+	background-color: $light;
+}

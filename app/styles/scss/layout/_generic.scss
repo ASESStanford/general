@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+
+.grid {
+
+}
+
+header, footer, section {
+  
+}
+
+img {
+  
+}
+
+logo {
+	display: block;
+}
+
+a {
+	color: $text-color;
+	text-decoration: none;
+
+  img {
+    border: 0; 
+  }
+
+  &[disabled] {
+  	pointer-events: none;
+  }
+}
+
+.error {
+	background: $red-light !important;
+	color: $red;
+}
+
+main {
+	background: $light;
+	display: table;
+	height: 100vh;
+	width: 100%;
+
+	route {
+		display: table-cell;
+		vertical-align: middle;
+
+		> * {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}

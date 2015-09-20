@@ -1,0 +1,74 @@
+new {
+	width: 70%;
+
+	#map, input[type=text], i {
+		margin-top: 10px;
+	}
+	#map {
+		height: 275px;
+		width: 100%;
+	}
+	form {
+		free, paid {
+			display: block;
+			margin: 2em 0;
+		}
+		availability {
+			display: block;
+			margin: 1em 0;
+			text-align: center;
+
+			time {
+				display: block;
+			}
+			day {
+				background: $white;
+				display: inline-block;
+				line-height: 1.5em;
+				margin: 0 2px 1em;
+				padding: .5em;
+
+				&.selected {
+					background: $blue;
+					color: $white;
+				}
+			}
+		}
+		button {
+			background: $green;
+			color: $white;
+			font-size: 1.15em;
+			font-weight: 700;
+			margin-top: 1.75em;
+			padding: 0 .75em;
+			text-transform: uppercase;
+
+			&[disabled] {
+				background: $grey;
+			}
+			&.selected {
+				background: $green-light;
+			}
+		}
+		label {
+			display: block;
+			font-size: 1.5em;
+			margin-top: 1em;
+		}
+		input {
+			display: inline-block;
+			padding: 0 1em;
+			width: 90%
+		}
+		i {
+			background: $blue-light;
+			color: $blue;
+			display: inline-block;
+			height: 1.5em;
+			line-height: 1.5em !important;
+			width: 10%;
+			vertical-align: top;
+			text-align: center;
+		}
+	}
+}
