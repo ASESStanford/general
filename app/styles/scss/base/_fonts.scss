@@ -1,0 +1,58 @@
+/*Gotham Font Stylesheet*/
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/Gotham-Black.otf')  format('opentype'),
+       url('../fonts/Gotham-Black.woff') format('woff'), url('../fonts/Gotham-Black.ttf')  format('truetype'), url('../fonts/Gotham-Black.svg#Gotham-Bold') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Gotham-Bold.otf')  format('opentype'),
+       url('../fonts/Gotham-Bold.woff') format('woff'), url('../fonts/Gotham-Bold.ttf')  format('truetype'), url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),  url('../fonts/Gotham-Medium.otf')  format('opentype'),
+       url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf')  format('truetype'), url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+  font-weight: normal;
+  font-style: 600;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/Gotham-Book.otf')  format('opentype'),
+       url('../fonts/Gotham-Book.woff') format('woff'), url('../fonts/Gotham-Book.ttf')  format('truetype'), url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/Gotham-Light.otf')  format('opentype'),
+       url('../fonts/Gotham-Light.woff') format('woff'), url('../fonts/Gotham-Light.ttf')  format('truetype'), url('../fonts/Gotham-Light.svg#Gotham-Light') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'),  url('../fonts/Gotham-Thin.otf')  format('opentype'),
+       url('../fonts/Gotham-Thin.woff') format('woff'), url('../fonts/Gotham-Thin.ttf')  format('truetype'), url('../fonts/Gotham-Thin.svg#Gotham-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Freight-Display Font Stylesheet */
+@font-face {
+  font-family: 'Freight';
+  src: url('../fonts/Freight-DispBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Freight-DispBold.otf')  format('opentype'),
+       url('../fonts/Freight-DispBold.woff') format('woff'), url('../fonts/Freight-DispBold.ttf')  format('truetype'), url('../fonts/Freight-DispBold.svg#Freight-DispBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

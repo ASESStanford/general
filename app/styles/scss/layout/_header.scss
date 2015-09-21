@@ -1,3 +1,11 @@
 header {
-  
+  nav {
+    ul li {
+      display: inline-block;
+      font-size: .75em;
+      line-height: 6em;
+      list-style: none;
+      padding: 0 2em;
+    }
+  }
 }

@@ -22,6 +22,13 @@ gulp.task('scripts', function() {
 	browserSync.reload();
 });
 
+gulp.task('fonts', function() {
+  gulp.src([app + 'fonts/**/*.*', app + 'scripts/*.*'])
+    .pipe(gulp.dest('dist/fonts'))
+    .pipe(gulp.dest(flask + 'static/fonts'))
+	browserSync.reload();
+});
+
 gulp.task('sass', function() {
   gulp.src(app + 'styles/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -37,9 +44,10 @@ gulp.task('html', function() {
 	browserSync.reload();
 });
 
-gulp.task('default', ['browser-sync', 'html', 'scripts'], function() {
+gulp.task('default', ['browser-sync', 'fonts', 'html', 'scripts'], function() {
   livereload.listen();
   gulp.watch(app + 'styles/**/*.scss', ['sass']);
   gulp.watch(app + 'scripts/**/*.js', ['scripts']);
+  gulp.watch(app + 'fonts/**/*.*', ['fonts']);
   gulp.watch(app + 'index.html', ['html']);
 });

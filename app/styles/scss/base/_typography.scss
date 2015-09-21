@@ -1,18 +1,54 @@
 // typography
-$header-font: 'Montserrat', Helvetica, Arial, sans-serif;
-$body-font: 'Karla', Helvetica, Arial, sans-serif;
-$emphasis-font: 'Karla', Helvetica, Arial, sans-serif;
+$body-font: 'Gotham', Georgia, Times, serif;
+$emphasis-font: 'Freight', serif;
 
 body {
-	color: $text-color;
-	font: 400 13px $body-font;
-	-webkit-font-smoothing: antialiased;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  font: 400 20px $body-font;
+  line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-weight: 200;
+  line-height: 1.75em;
+}
+
+.book {
+  font-weight: 400;
+}
+
+.med {
+  font-weight: 600;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: $header-font;
-  font-weight: 700;
+  font-weight: 900;
   margin: 0;
-  text-transform: uppercase;
+
+  .normal {
+    font-weight: normal;
+  }
+}
+
+h1 {
+  font-size: 10rem;
+  line-height: 1.34em;
+}
+h2 {
+  font-size: 3em;
+  line-height: 1.34em;
+}
+h3 {
+  font-size: 2.75em;
+  line-height: 1.33em;
+  letter-spacing: -1.25px;
+}
+h4 {
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1.25em;
+}
+h5 {
+  font-size: 1.75em;
 }

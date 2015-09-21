@@ -1,7 +1,3 @@
-body {
-  color: red;
-}
-
 // Global mixins and variables
 @import 'helpers/mixins';
 @import 'helpers/variables';
@@ -9,11 +5,12 @@ body {
 
 // Normalizes CSS
 @import 'base/normalize';
+@import 'base/fonts';
 @import 'base/typography';
 
 // Styling for reusable components like buttons
 @import 'components/forms';
-@import 'components/maps';
+@import 'components/buttons';
 
 // Contains layout styling
 @import 'layout/grid';
@@ -23,8 +20,6 @@ body {
 
 // Styling for individual pages
 @import 'pages/homepage';
-@import 'pages/results';
-@import 'pages/new';
 
 // Media queries for responsive design
 @import 'layout/media';
