@@ -17,19 +17,24 @@
 </head>
 
 <body>
+  <div id="loading">
+    <img src="images/logo.png" alt="loading" />
+  </div>
+
   <section id="landing">
     <div>
-      <header class="grid">
-        <a class="grid__col col--1-of-3" href="/"></a>
-
-        <nav class="grid__col col--2-of-3">
+      <header>
+        <a id="logo" href="#landing">ASES</a>
+        <nav>
           <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Programs</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Apply</a></li>
-            <li><a href="">=</a></li>
+            <li><a href="#history">About</a></li>
+            <li><a href="#list">Programs</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://stanfordases.typeform.com/to/sZEnkW" target="_blank">Apply</a></li>
+            <!-- <li><a id="hamburger" href="#">
+              <img src="images/hamburger_icon.png" alt="nav"/>
+            </a></li> -->
           </ul>
         </nav>
       </header>
@@ -39,20 +44,36 @@
       Globe's Problems.</h2>
       <h5>Join us. Let's get to work.</h5>
 
-      <form>
-        <input type="text" placeholder="Email Address" name="email_address" />
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+      <form action="http://stanford.us8.list-manage.com/subscribe/post?u=9356d6977299a28284ef01925&amp;id=a60eafbb8d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+
+      <div class="mc-field-group">
+      	<input placeholder="Email Address" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+      </div>
+      	<div id="mce-responses" class="clear">
+      		<div class="response" id="mce-error-response" style="display:none"></div>
+      		<div class="response" id="mce-success-response" style="display:none"></div>
+      	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_9356d6977299a28284ef01925_a60eafbb8d" tabindex="-1" value=""></div>
+          <div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
       </form>
+      </div>
+
+      <!--End mc_embed_signup-->
     </div>
   </section>
 
   <section id="history">
     <div>
-      <header>
-        <h4>Since</h4>
+      <header class="centered">
+        <h4 class="strike-through"><span>Since</span></h4>
         <h1>1989</h1>
       </header>
 
-      <p>
+      <p class="centered">
         ASES was founded at Stanford University in 1989 with the goal of connecting student entrepreneurs all over the world to create a global network of innovators. Decades later, ASES has over a dozen active branches and counting globally. We challenge our members to expand outside the Silicon Valley and solve the world's problems for the billion's of everyday people.
       </p>
     </div>
@@ -60,55 +81,114 @@
 
   <section id="community">
     <div class="grid">
-      <div class="grid__col col--1-of-2">
+      <div class="grid__col col--4-of-10">
         <h2>Building a community.</h2>
         <p>Our community is what makes us. We pride ourselves in being a smaller club; this means we're lean and efficient allowing us to spend less time having meeting to have meetings and more time learning, solving hard problems, and having fun together.</p>
       </div>
-      <div class="grid__col col--1-of-2">
+      <div class="video grid__col col--6-of-10">
+        <iframe src="https://player.vimeo.com/video/105448147" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     </div>
   </section>
 
   <section id="list">
     <div>
-      <h3>Quality over Quantity</h3>
+      <h2>Quality over Quantity</h2>
       <p>We focus on providing our members significant value in the forms of learning, networking, and fun. This is only possible because we limit the number of the events we do so we can do them extremely well.</p>
     </div>
   </section>
 
-  <section class="programs">
-    <div>
-      <h3>Bootcamp<span class="normal"> - Solve Wicked Problems.</span></h3>
-      <p>Get ready to learn quickly and work hard. During Fall Quarter, first year ASES members form teams to solve a real problem. Bootcamp utilizes design thinking strategies to teach you about product development and starting a company. Bootcamp culminates in a pitch competition to a panel of VC's and entrepreneurs at the end of the quarter.</p>
-
-      <button>Apply</button>
+  <section id="bootcamp" class="programs">
+    <div class="grid">
+      <div class="grid__col col--1-of-2">
+        <h2>Bootcamp<span class="normal"> - Solve<br />Wicked Problems.</span></h2>
+        <p>Get ready to learn quickly and work hard. During Fall Quarter, first year ASES members form teams to solve a real problem. Bootcamp utilizes design thinking strategies to teach you about product development and starting a company. Bootcamp culminates in a pitch competition to a panel of VC's and entrepreneurs at the end of the quarter.
+        </p>
+        <a href="https://stanfordases.typeform.com/to/sZEnkW" target="_blank" class="btn">Apply</a>
+      </div>
+      <div class="grid__col col--1-of-2">
+        <div class="grid activity teams">
+          <div class="icon grid__col col--1-of-4">
+          </div>
+          <div class="grid__col col--3-of-4">
+            Form Teams
+          </div>
+        </div>
+        <div class="grid activity problems">
+          <div class="icon grid__col col--1-of-4">
+          </div>
+          <div class="grid__col col--3-of-4">
+            Solve a Problem
+          </div>
+        </div>
+        <div class="grid activity presentation">
+          <div class="icon grid__col col--1-of-4">
+          </div>
+          <div class="grid__col col--3-of-4">
+            Pitch to VCs
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="programs" id="">
-    <div>
-      <h3>Build the Future Weekends<span class="normal"> - Enabling Local High Schoolers.</span></h3>
-      <p>We've all been high schoolers at one point so we know that high schoolers have great ideas! Build the Future Weekends is all about enabling these students to turn their ideas into realities, whether they be simple websites advances mobile apps, or fast growing businesses.</p>
+  <section id="bfw" class="programs" id="">
+    <div class="grid">
+      <div class="grid__col description col--1-of-2">
+        <h2>Build the Future Weekends<span class="normal"> - Enabling Local High Schoolers.</span></h2>
+        <p>We've all been high schoolers at one point so we know that high schoolers have great ideas! Build the Future Weekends is all about enabling these students to turn their ideas into realities, whether they be simple websites advances mobile apps, or fast growing businesses.</p>
 
-      <button>Learn More</button>
+        <a href="http://ases.stanford.edu/sia/" target="_blank" class="btn">Learn More</a>
+      </div>
+      <div class="grid__col col--1-of-2 map">
+      </div>
     </div>
   </section>
 
-  <section class="programs" id="">
-    <div>
-      <h3>VC3<span class="normal"> - Funding Stanford's Startups.</span></h3>
-      <p>ASES's mission is to solve global problems. We do this with great educational programs like Bootcamp but also by providing problem sovlers with incredible resources. With VC3, we connect the Valley's most prominent VC's with startups taking on the world's most challenging, painful problems.</p>
+  <section id="vc3" class="programs" id="">
+    <div class="grid">
+      <div class="description grid__col col--1-of-2">
+        <h2>VC3<span class="normal"> - Funding Stanford's Startups.</span></h2>
+        <p>ASES's mission is to solve global problems. We do this with great educational programs like Bootcamp but also by providing problem sovlers with incredible resources. With VC3, we connect the Valley's most prominent VC's with startups taking on the world's most challenging, painful problems.</p>
 
-      <button>Learn More</button>
+        <a href="http://asesvc3.com/" class="btn">Learn More</a>
+      </div>
+      <div class="logos grid__col col--1-of-2">
+      </div>
     </div>
   </section>
 
-  <section class="programs" id="">
-    <div>
-      <h3>Summit<span class="normal"> - Connecting Global Entrepreneurs</span></h3>
-      <p>Every year we select 35 of world's best collegiate entrepreneurs to come to Stanford and participate in a week of entrepreneurship, design, incredible guest speakers, and wicked problem solving. Summit is great for the delegates and even better for ASES members who get to expand their networks globally and gain first-hard exposure to global problems and ways of thinking.</p>
+  <section id="summit" class="programs" id="">
+    <div class="grid">
+      <div class="grid__col col--1-of-2">
+        <h2>Summit<span class="normal"> - Connecting Global Entrepreneurs</span></h2>
+        <p>Every year we select 35 of world's best collegiate entrepreneurs to come to Stanford and participate in a week of entrepreneurship, design, incredible guest speakers, and wicked problem solving. Summit is great for the delegates and even better for ASES members who get to expand their networks globally and gain first-hard exposure to global problems and ways of thinking.</p>
 
-      <button>Learn More</button>
+        <a href="http://ases.stanford.edu/summit" target="_blank" class="btn">Learn More</a>
+      </div>
+      <div class="grid__col col--1-of-2">
+        <div class="grid activity calendar">
+          <div class="icon grid__col col--1-of-4">
+          </div>
+          <div class="grid__col col--3-of-4">
+            One Week of Global<br />Entrepreneurship
+          </div>
+        </div>
+        <div class="grid activity group">
+          <div class="icon grid__col col--1-of-4">
+          </div>
+          <div class="grid__col col--3-of-4">
+            35 Collegiate<br />Entrepreneurs
+          </div>
+        </div>
+        <div class="grid activity location">
+          <div class="icon grid__col col--1-of-4">
+          </div>
+          <div class="grid__col col--3-of-4">
+            Stanford University
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -117,25 +197,85 @@
       <h2>Frequently Asked Questions</h2>
 
       <article>
-        <div>
-
+        <div class="question">
+          How are you guys different from other entrepreneurship organizations on campus?
         </div>
-        <div>
+        <div class="answer">
+          As a global organization, we focus on solving the world's problems, not just the Silicon Valley's. There's tons of cool apps and services here in the Valley and we think that's totally awesome. But as students of one of the best institutions in the world, we think we can do better than that so we challenge our members to solve the hardest and most painful problems for hte billions of everyday people around the globe and not just create yet another iteration upon an existing "app" of the money we already have in the Valley.
         </div>
       </article>
+      <article>
+        <div class="question">
+          What will I get out of ASES?
+        </div>
+        <div class="answer">
+          We get it, you have 4 years at Stanford before you have to enter the "real world" and you want to grow as much as you can. Personal development and community are core to us. We only do things when there is clear and significant learning opportunities for our members. We're able to do this because we're a smaller organization by design; this allows us to skip out on the bureaucracy that plagues larger clubs, gives every member the opportunity to have personal growth and real impact in the club, and allows our community to be real and close knit.
+        </div>
+      </article>
+      <article>
+        <div class="question">
+          What does ASES stand for?
+        </div>
+        <div class="answer">
+          The Asia-Pacific Student Entrepreneurship Society. Also, we know what it looks like, but it's pronounced like "aces."
+        </div>
+      </article>
+    </div>
   </section>
 
   <section id="contact">
-    <form>
-      <h2>Contact Us</h2>
-      <p>Wanna chat? Hit us up and we'll get back to you soon! Have an attachement or just prefer to email us? No problem, we're at ases@stanford.edu</p>
+    <div class="grid">
+      <div class="grid__col col--1-of-2">
+          <h2>Contact Us</h2>
+          <p>Wanna chat? Hit us up and we'll get back to you soon! Have an attachement or just prefer to email us? No problem, we're at ases@stanford.edu.</p>
 
-      <input type="text" placeholder="Your Name" />
-      <input type="text" placeholder="Your Name" />
+          <form action="https://formaholic.com/f/37d86a36827b2a0f" method="POST">
+            <input type="text" name="_gotcha" style="display:none">
+            <div class="field grid">
+              <div class="grid__col col--1-of-2">
+                <input name="name" type="text" placeholder="Your Name" />
+              </div>
+              <div class="grid__col col--1-of-2">
+                <input name="email" required="true" type="text" placeholder="Email Address" />
+              </div>
+            </div>
+            <div class="field grid">
+              <div class="grid__col col--3-of-3">
+                <input name="subject" type="text" placeholder="Subject" />
+              </div>
+            </div>
+            <div class="field grid">
+              <div class="grid__col col--3-of-3">
+                <input name="message" type="text" placeholder="Message" />
+              </div>
+            </div>
 
-    </form>
+            <input class="btn" type="submit" value="Submit" />
+          </form>
+      </div>
+    </div>
   </section>
 
-  <script src="js/lib/ajax.jquery.min.js"></script>
+  <footer>
+    <img src="images/logo.png" />
+    <p>Solve global problems.</p>
+    <div class="grid">
+      <div class="grid__col col--7-of-10">
+        &copy; 2015. All rights reserved.
+      </div>
+      <div class="icon email grid__col col--1-of-10">
+        <a href="mailto:dnjiang@stanford.edu"></a>
+      </div>
+      <div class="icon twitter grid__col col--1-of-10">
+        <a href="https://twitter.com/ASESStanford"></a>
+      </div>
+      <div class="icon facebook grid__col col--1-of-10">
+        <a href="https://facebook.com/StanfordASES"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,9 +1,9 @@
 @charset "UTF-8";
 .blue-text {
-  color: #95D1DA; }
+  color: #233F71; }
 
 .blue-med-text {
-  color: #c2e5ea; }
+  color: #3159a0; }
 
 .blue-light-text {
   color: #E2F5F5; }
@@ -21,7 +21,7 @@
   color: #F3F8F3; }
 
 .blue-bg {
-  background-color: #95D1DA; }
+  background-color: #233F71; }
 
 .green-bg {
   background-color: #72B29A; }
@@ -435,12 +435,13 @@ th {
   font-style: normal; }
 
 body {
-  font: 400 20px "Gotham", Georgia, Times, serif;
+  font: 400 16px "Gotham", Georgia, Times, serif;
   line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 p {
+  display: block;
   font-weight: 200;
   line-height: 1.75em; }
 
@@ -461,44 +462,46 @@ h1 {
   line-height: 1.34em; }
 
 h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1.34em; }
 
 h3 {
-  font-size: 2.75em;
+  font-size: 2em;
   line-height: 1.33em;
   letter-spacing: -1.25px; }
 
 h4 {
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: 500;
   line-height: 1.25em; }
 
 h5 {
-  font-size: 1.75em; }
+  font-size: 1.25em; }
 
 input, button {
   border: 0;
   height: 3em;
   line-height: 2em;
   vertical-align: middle;
-  outline: none; }
+  outline: none;
+  display: block;
+  width: 100%; }
 
 input[type=text] {
   background: #fff; }
 
 input::-webkit-input-placeholder {
-  color: #1d4c53; }
+  color: black; }
 
 input::-moz-placeholder {
-  color: #1d4c53; }
+  color: black; }
 
 input:-moz-placeholder {
   /* Older versions of Firefox */
-  color: #1d4c53; }
+  color: black; }
 
 input:-ms-input-placeholder {
-  color: #1d4c53; }
+  color: black; }
 
 select {
   background: #fff;
@@ -506,13 +509,19 @@ select {
   display: inline-block;
   font-size: 1.25em; }
 
-button {
-  color: #fff;
+.btn {
+  background: #CB6A79;
   border-radius: 1.5em;
+  -webkit-box-shadow: 0px 0px 34px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 34px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 34px -9px rgba(0, 0, 0, 0.75);
+  color: #fff;
+  display: inline-block;
   font-weight: 600;
   letter-spacing: .15em;
-  padding: 0 4em;
   line-height: 2em;
+  margin-top: 1em;
+  padding: 0.15em 4em;
   text-transform: uppercase; }
 
 /*-----------------------------------*
@@ -558,41 +567,41 @@ button {
 .grid {
   list-style: none;
   margin-left: -20px; }
-  .grid > .col--2-of-2, .grid > .col--3-of-3, .grid > .col--4-of-4, .grid > .col--5-of-5, .grid > .col--6-of-6, .grid > .col--8-of-8, .grid > .col--12-of-12 {
+  .grid > .col--2-of-2, .grid > .col--3-of-3, .grid > .col--4-of-4, .grid > .col--5-of-5, .grid > .col--6-of-6, .grid > .col--8-of-8, .grid > .col--10-of-10 {
     width: 100%; }
-  .grid > .col--1-of-2, .grid > .col--2-of-4, .grid > .col--3-of-6, .grid > .col--4-of-8, .grid > .col--6-of-12 {
+  .grid > .col--1-of-2, .grid > .col--2-of-4, .grid > .col--3-of-6, .grid > .col--4-of-8, .grid > .col--5-of-10 {
     width: 50%; }
-  .grid > .col--1-of-3, .grid > .col--2-of-6, .grid > .col--4-of-12 {
+  .grid > .col--1-of-3, .grid > .col--2-of-6 {
     width: 33.33333%; }
-  .grid > .col--2-of-3, .grid > .col--4-of-6, .grid > .col--8-of-12 {
+  .grid > .col--2-of-3, .grid > .col--4-of-6 {
     width: 66.66667%; }
-  .grid > .col--1-of-4, .grid > .col--2-of-8, .grid > .col--3-of-12 {
+  .grid > .col--1-of-4, .grid > .col--2-of-8 {
     width: 25%; }
-  .grid > .col--3-of-4, .grid > .col--6-of-8, .grid > .col--9-of-12 {
+  .grid > .col--3-of-4, .grid > .col--6-of-8 {
     width: 75%; }
-  .grid > .col--push-2-of-2, .grid > .col--push-3-of-3, .grid > .col--push-4-of-4, .grid > .col--push-5-of-5, .grid > .col--push-6-of-6, .grid > .col--push-8-of-8, .grid > .col--push-12-of-12 {
+  .grid > .col--push-2-of-2, .grid > .col--push-3-of-3, .grid > .col--push-4-of-4, .grid > .col--push-5-of-5, .grid > .col--push-6-of-6, .grid > .col--push-8-of-8, .grid > .col--push-10-of-10 {
     margin-left: 100%; }
-  .grid > .col--push-1-of-2, .grid > .col--push-2-of-4, .grid > .col--push-3-of-6, .grid > .col--push-4-of-8, .grid > .col--push-6-of-12 {
+  .grid > .col--push-1-of-2, .grid > .col--push-2-of-4, .grid > .col--push-3-of-6, .grid > .col--push-4-of-8, .grid > .col--push-5-of-10 {
     margin-left: 50%; }
-  .grid > .col--push-1-of-3, .grid > .col--push-2-of-6, .grid > .col--push-4-of-12 {
+  .grid > .col--push-1-of-3, .grid > .col--push-2-of-6 {
     margin-left: 33.33333%; }
-  .grid > .col--push-2-of-3, .grid > .col--push-4-of-6, .grid > .col--push-8-of-12 {
+  .grid > .col--push-2-of-3, .grid > .col--push-4-of-6 {
     margin-left: 66.66667%; }
-  .grid > .col--push-1-of-4, .grid > .col--push-2-of-8, .grid > .col--push-3-of-12 {
+  .grid > .col--push-1-of-4, .grid > .col--push-2-of-8 {
     margin-left: 25%; }
-  .grid > .col--push-3-of-4, .grid > .col--push-6-of-8, .grid > .col--push-9-of-12 {
+  .grid > .col--push-3-of-4, .grid > .col--push-6-of-8 {
     margin-left: 75%; }
-  .grid > .col--pull-2-of-2, .grid > .col--pull-3-of-3, .grid > .col--pull-4-of-4, .grid > .col--pull-5-of-5, .grid > .col--pull-6-of-6, .grid > .col--pull-8-of-8, .grid > .col--pull-12-of-12 {
+  .grid > .col--pull-2-of-2, .grid > .col--pull-3-of-3, .grid > .col--pull-4-of-4, .grid > .col--pull-5-of-5, .grid > .col--pull-6-of-6, .grid > .col--pull-8-of-8, .grid > .col--pull-10-of-10 {
     margin-left: -100%; }
-  .grid > .col--pull-1-of-2, .grid > .col--pull-2-of-4, .grid > .col--pull-3-of-6, .grid > .col--pull-4-of-8, .grid > .col--pull-6-of-12 {
+  .grid > .col--pull-1-of-2, .grid > .col--pull-2-of-4, .grid > .col--pull-3-of-6, .grid > .col--pull-4-of-8, .grid > .col--pull-5-of-10 {
     margin-left: -50%; }
-  .grid > .col--pull-1-of-3, .grid > .col--pull-2-of-6, .grid > .col--pull-4-of-12 {
+  .grid > .col--pull-1-of-3, .grid > .col--pull-2-of-6 {
     margin-left: -33.33333%; }
-  .grid > .col--pull-2-of-3, .grid > .col--pull-4-of-6, .grid > .col--pull-8-of-12 {
+  .grid > .col--pull-2-of-3, .grid > .col--pull-4-of-6 {
     margin-left: -66.66667%; }
-  .grid > .col--pull-1-of-4, .grid > .col--pull-2-of-8, .grid > .col--pull-3-of-12 {
+  .grid > .col--pull-1-of-4, .grid > .col--pull-2-of-8 {
     margin-left: -25%; }
-  .grid > .col--pull-3-of-4, .grid > .col--pull-6-of-8, .grid > .col--pull-9-of-12 {
+  .grid > .col--pull-3-of-4, .grid > .col--pull-6-of-8 {
     margin-left: -75%; }
   .grid > .col--1-of-5 {
     width: 20%; }
@@ -654,43 +663,55 @@ button {
     margin-left: 87.5%; }
   .grid > .col--pull-7-of-8 {
     margin-left: -87.5%; }
-  .grid > .col--1-of-12 {
-    width: 8.33333%; }
-  .grid > .col--push-1-of-12 {
-    margin-left: 8.33333%; }
-  .grid > .col--pull-1-of-12 {
-    margin-left: -8.33333%; }
-  .grid > .col--2-of-12 {
-    width: 16.66667%; }
-  .grid > .col--push-2-of-12 {
-    margin-left: 16.66667%; }
-  .grid > .col--pull-2-of-12 {
-    margin-left: -16.66667%; }
-  .grid > .col--5-of-12 {
-    width: 41.66667%; }
-  .grid > .col--push-5-of-12 {
-    margin-left: 41.66667%; }
-  .grid > .col--pull-5-of-12 {
-    margin-left: -41.66667%; }
-  .grid > .col--7-of-12 {
-    width: 58.33333%; }
-  .grid > .col--push-7-of-12 {
-    margin-left: 58.33333%; }
-  .grid > .col--pull-7-of-12 {
-    margin-left: -58.33333%; }
-  .grid > .col--10-of-12 {
-    width: 83.33333%; }
-  .grid > .col--push-10-of-12 {
-    margin-left: 83.33333%; }
-  .grid > .col--pull-10-of-12 {
-    margin-left: -83.33333%; }
-  .grid > .col--11-of-12 {
-    width: 91.66667%; }
-  .grid > .col--push-11-of-12 {
-    margin-left: 91.66667%; }
-  .grid > .col--pull-11-of-12 {
-    margin-left: -91.66667%; }
-  .grid > *, .grid > .col--1-of-2, .grid > .col--push-1-of-2, .grid > .col--pull-1-of-2, .grid > .col--2-of-2, .grid > .col--push-2-of-2, .grid > .col--pull-2-of-2, .grid > .col--1-of-3, .grid > .col--push-1-of-3, .grid > .col--pull-1-of-3, .grid > .col--2-of-3, .grid > .col--push-2-of-3, .grid > .col--pull-2-of-3, .grid > .col--3-of-3, .grid > .col--push-3-of-3, .grid > .col--pull-3-of-3, .grid > .col--1-of-4, .grid > .col--push-1-of-4, .grid > .col--pull-1-of-4, .grid > .col--2-of-4, .grid > .col--push-2-of-4, .grid > .col--pull-2-of-4, .grid > .col--3-of-4, .grid > .col--push-3-of-4, .grid > .col--pull-3-of-4, .grid > .col--4-of-4, .grid > .col--push-4-of-4, .grid > .col--pull-4-of-4, .grid > .col--1-of-5, .grid > .col--push-1-of-5, .grid > .col--pull-1-of-5, .grid > .col--2-of-5, .grid > .col--push-2-of-5, .grid > .col--pull-2-of-5, .grid > .col--3-of-5, .grid > .col--push-3-of-5, .grid > .col--pull-3-of-5, .grid > .col--4-of-5, .grid > .col--push-4-of-5, .grid > .col--pull-4-of-5, .grid > .col--5-of-5, .grid > .col--push-5-of-5, .grid > .col--pull-5-of-5, .grid > .col--1-of-6, .grid > .col--push-1-of-6, .grid > .col--pull-1-of-6, .grid > .col--2-of-6, .grid > .col--push-2-of-6, .grid > .col--pull-2-of-6, .grid > .col--3-of-6, .grid > .col--push-3-of-6, .grid > .col--pull-3-of-6, .grid > .col--4-of-6, .grid > .col--push-4-of-6, .grid > .col--pull-4-of-6, .grid > .col--5-of-6, .grid > .col--push-5-of-6, .grid > .col--pull-5-of-6, .grid > .col--6-of-6, .grid > .col--push-6-of-6, .grid > .col--pull-6-of-6, .grid > .col--1-of-8, .grid > .col--push-1-of-8, .grid > .col--pull-1-of-8, .grid > .col--2-of-8, .grid > .col--push-2-of-8, .grid > .col--pull-2-of-8, .grid > .col--3-of-8, .grid > .col--push-3-of-8, .grid > .col--pull-3-of-8, .grid > .col--4-of-8, .grid > .col--push-4-of-8, .grid > .col--pull-4-of-8, .grid > .col--5-of-8, .grid > .col--push-5-of-8, .grid > .col--pull-5-of-8, .grid > .col--6-of-8, .grid > .col--push-6-of-8, .grid > .col--pull-6-of-8, .grid > .col--7-of-8, .grid > .col--push-7-of-8, .grid > .col--pull-7-of-8, .grid > .col--8-of-8, .grid > .col--push-8-of-8, .grid > .col--pull-8-of-8, .grid > .col--1-of-12, .grid > .col--push-1-of-12, .grid > .col--pull-1-of-12, .grid > .col--2-of-12, .grid > .col--push-2-of-12, .grid > .col--pull-2-of-12, .grid > .col--3-of-12, .grid > .col--push-3-of-12, .grid > .col--pull-3-of-12, .grid > .col--4-of-12, .grid > .col--push-4-of-12, .grid > .col--pull-4-of-12, .grid > .col--5-of-12, .grid > .col--push-5-of-12, .grid > .col--pull-5-of-12, .grid > .col--6-of-12, .grid > .col--push-6-of-12, .grid > .col--pull-6-of-12, .grid > .col--7-of-12, .grid > .col--push-7-of-12, .grid > .col--pull-7-of-12, .grid > .col--8-of-12, .grid > .col--push-8-of-12, .grid > .col--pull-8-of-12, .grid > .col--9-of-12, .grid > .col--push-9-of-12, .grid > .col--pull-9-of-12, .grid > .col--10-of-12, .grid > .col--push-10-of-12, .grid > .col--pull-10-of-12, .grid > .col--11-of-12, .grid > .col--push-11-of-12, .grid > .col--pull-11-of-12, .grid > .col--12-of-12, .grid > .col--push-12-of-12, .grid > .col--pull-12-of-12, .grid > .col--2-of-2, .grid > .col--3-of-3, .grid > .col--4-of-4, .grid > .col--5-of-5, .grid > .col--6-of-6, .grid > .col--8-of-8, .grid > .col--12-of-12 {
+  .grid > .col--1-of-10 {
+    width: 10%; }
+  .grid > .col--push-1-of-10 {
+    margin-left: 10%; }
+  .grid > .col--pull-1-of-10 {
+    margin-left: -10%; }
+  .grid > .col--2-of-10 {
+    width: 20%; }
+  .grid > .col--push-2-of-10 {
+    margin-left: 20%; }
+  .grid > .col--pull-2-of-10 {
+    margin-left: -20%; }
+  .grid > .col--3-of-10 {
+    width: 30%; }
+  .grid > .col--push-3-of-10 {
+    margin-left: 30%; }
+  .grid > .col--pull-3-of-10 {
+    margin-left: -30%; }
+  .grid > .col--4-of-10 {
+    width: 40%; }
+  .grid > .col--push-4-of-10 {
+    margin-left: 40%; }
+  .grid > .col--pull-4-of-10 {
+    margin-left: -40%; }
+  .grid > .col--6-of-10 {
+    width: 60%; }
+  .grid > .col--push-6-of-10 {
+    margin-left: 60%; }
+  .grid > .col--pull-6-of-10 {
+    margin-left: -60%; }
+  .grid > .col--7-of-10 {
+    width: 70%; }
+  .grid > .col--push-7-of-10 {
+    margin-left: 70%; }
+  .grid > .col--pull-7-of-10 {
+    margin-left: -70%; }
+  .grid > .col--8-of-10 {
+    width: 80%; }
+  .grid > .col--push-8-of-10 {
+    margin-left: 80%; }
+  .grid > .col--pull-8-of-10 {
+    margin-left: -80%; }
+  .grid > .col--9-of-10 {
+    width: 90%; }
+  .grid > .col--push-9-of-10 {
+    margin-left: 90%; }
+  .grid > .col--pull-9-of-10 {
+    margin-left: -90%; }
+  .grid > *, .grid > .col--1-of-2, .grid > .col--push-1-of-2, .grid > .col--pull-1-of-2, .grid > .col--2-of-2, .grid > .col--push-2-of-2, .grid > .col--pull-2-of-2, .grid > .col--1-of-3, .grid > .col--push-1-of-3, .grid > .col--pull-1-of-3, .grid > .col--2-of-3, .grid > .col--push-2-of-3, .grid > .col--pull-2-of-3, .grid > .col--3-of-3, .grid > .col--push-3-of-3, .grid > .col--pull-3-of-3, .grid > .col--1-of-4, .grid > .col--push-1-of-4, .grid > .col--pull-1-of-4, .grid > .col--2-of-4, .grid > .col--push-2-of-4, .grid > .col--pull-2-of-4, .grid > .col--3-of-4, .grid > .col--push-3-of-4, .grid > .col--pull-3-of-4, .grid > .col--4-of-4, .grid > .col--push-4-of-4, .grid > .col--pull-4-of-4, .grid > .col--1-of-5, .grid > .col--push-1-of-5, .grid > .col--pull-1-of-5, .grid > .col--2-of-5, .grid > .col--push-2-of-5, .grid > .col--pull-2-of-5, .grid > .col--3-of-5, .grid > .col--push-3-of-5, .grid > .col--pull-3-of-5, .grid > .col--4-of-5, .grid > .col--push-4-of-5, .grid > .col--pull-4-of-5, .grid > .col--5-of-5, .grid > .col--push-5-of-5, .grid > .col--pull-5-of-5, .grid > .col--1-of-6, .grid > .col--push-1-of-6, .grid > .col--pull-1-of-6, .grid > .col--2-of-6, .grid > .col--push-2-of-6, .grid > .col--pull-2-of-6, .grid > .col--3-of-6, .grid > .col--push-3-of-6, .grid > .col--pull-3-of-6, .grid > .col--4-of-6, .grid > .col--push-4-of-6, .grid > .col--pull-4-of-6, .grid > .col--5-of-6, .grid > .col--push-5-of-6, .grid > .col--pull-5-of-6, .grid > .col--6-of-6, .grid > .col--push-6-of-6, .grid > .col--pull-6-of-6, .grid > .col--1-of-8, .grid > .col--push-1-of-8, .grid > .col--pull-1-of-8, .grid > .col--2-of-8, .grid > .col--push-2-of-8, .grid > .col--pull-2-of-8, .grid > .col--3-of-8, .grid > .col--push-3-of-8, .grid > .col--pull-3-of-8, .grid > .col--4-of-8, .grid > .col--push-4-of-8, .grid > .col--pull-4-of-8, .grid > .col--5-of-8, .grid > .col--push-5-of-8, .grid > .col--pull-5-of-8, .grid > .col--6-of-8, .grid > .col--push-6-of-8, .grid > .col--pull-6-of-8, .grid > .col--7-of-8, .grid > .col--push-7-of-8, .grid > .col--pull-7-of-8, .grid > .col--8-of-8, .grid > .col--push-8-of-8, .grid > .col--pull-8-of-8, .grid > .col--1-of-10, .grid > .col--push-1-of-10, .grid > .col--pull-1-of-10, .grid > .col--2-of-10, .grid > .col--push-2-of-10, .grid > .col--pull-2-of-10, .grid > .col--3-of-10, .grid > .col--push-3-of-10, .grid > .col--pull-3-of-10, .grid > .col--4-of-10, .grid > .col--push-4-of-10, .grid > .col--pull-4-of-10, .grid > .col--5-of-10, .grid > .col--push-5-of-10, .grid > .col--pull-5-of-10, .grid > .col--6-of-10, .grid > .col--push-6-of-10, .grid > .col--pull-6-of-10, .grid > .col--7-of-10, .grid > .col--push-7-of-10, .grid > .col--pull-7-of-10, .grid > .col--8-of-10, .grid > .col--push-8-of-10, .grid > .col--pull-8-of-10, .grid > .col--9-of-10, .grid > .col--push-9-of-10, .grid > .col--pull-9-of-10, .grid > .col--10-of-10, .grid > .col--push-10-of-10, .grid > .col--pull-10-of-10, .grid > .col--2-of-2, .grid > .col--3-of-3, .grid > .col--4-of-4, .grid > .col--5-of-5, .grid > .col--6-of-6, .grid > .col--8-of-8, .grid > .col--10-of-10 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -700,7 +721,7 @@ button {
     padding-left: 20px;
     vertical-align: top; }
     @media screen and (max-width: 700px) {
-      .grid > *, .grid > .col--1-of-2, .grid > .col--push-1-of-2, .grid > .col--pull-1-of-2, .grid > .col--2-of-2, .grid > .col--push-2-of-2, .grid > .col--pull-2-of-2, .grid > .col--1-of-3, .grid > .col--push-1-of-3, .grid > .col--pull-1-of-3, .grid > .col--2-of-3, .grid > .col--push-2-of-3, .grid > .col--pull-2-of-3, .grid > .col--3-of-3, .grid > .col--push-3-of-3, .grid > .col--pull-3-of-3, .grid > .col--1-of-4, .grid > .col--push-1-of-4, .grid > .col--pull-1-of-4, .grid > .col--2-of-4, .grid > .col--push-2-of-4, .grid > .col--pull-2-of-4, .grid > .col--3-of-4, .grid > .col--push-3-of-4, .grid > .col--pull-3-of-4, .grid > .col--4-of-4, .grid > .col--push-4-of-4, .grid > .col--pull-4-of-4, .grid > .col--1-of-5, .grid > .col--push-1-of-5, .grid > .col--pull-1-of-5, .grid > .col--2-of-5, .grid > .col--push-2-of-5, .grid > .col--pull-2-of-5, .grid > .col--3-of-5, .grid > .col--push-3-of-5, .grid > .col--pull-3-of-5, .grid > .col--4-of-5, .grid > .col--push-4-of-5, .grid > .col--pull-4-of-5, .grid > .col--5-of-5, .grid > .col--push-5-of-5, .grid > .col--pull-5-of-5, .grid > .col--1-of-6, .grid > .col--push-1-of-6, .grid > .col--pull-1-of-6, .grid > .col--2-of-6, .grid > .col--push-2-of-6, .grid > .col--pull-2-of-6, .grid > .col--3-of-6, .grid > .col--push-3-of-6, .grid > .col--pull-3-of-6, .grid > .col--4-of-6, .grid > .col--push-4-of-6, .grid > .col--pull-4-of-6, .grid > .col--5-of-6, .grid > .col--push-5-of-6, .grid > .col--pull-5-of-6, .grid > .col--6-of-6, .grid > .col--push-6-of-6, .grid > .col--pull-6-of-6, .grid > .col--1-of-8, .grid > .col--push-1-of-8, .grid > .col--pull-1-of-8, .grid > .col--2-of-8, .grid > .col--push-2-of-8, .grid > .col--pull-2-of-8, .grid > .col--3-of-8, .grid > .col--push-3-of-8, .grid > .col--pull-3-of-8, .grid > .col--4-of-8, .grid > .col--push-4-of-8, .grid > .col--pull-4-of-8, .grid > .col--5-of-8, .grid > .col--push-5-of-8, .grid > .col--pull-5-of-8, .grid > .col--6-of-8, .grid > .col--push-6-of-8, .grid > .col--pull-6-of-8, .grid > .col--7-of-8, .grid > .col--push-7-of-8, .grid > .col--pull-7-of-8, .grid > .col--8-of-8, .grid > .col--push-8-of-8, .grid > .col--pull-8-of-8, .grid > .col--1-of-12, .grid > .col--push-1-of-12, .grid > .col--pull-1-of-12, .grid > .col--2-of-12, .grid > .col--push-2-of-12, .grid > .col--pull-2-of-12, .grid > .col--3-of-12, .grid > .col--push-3-of-12, .grid > .col--pull-3-of-12, .grid > .col--4-of-12, .grid > .col--push-4-of-12, .grid > .col--pull-4-of-12, .grid > .col--5-of-12, .grid > .col--push-5-of-12, .grid > .col--pull-5-of-12, .grid > .col--6-of-12, .grid > .col--push-6-of-12, .grid > .col--pull-6-of-12, .grid > .col--7-of-12, .grid > .col--push-7-of-12, .grid > .col--pull-7-of-12, .grid > .col--8-of-12, .grid > .col--push-8-of-12, .grid > .col--pull-8-of-12, .grid > .col--9-of-12, .grid > .col--push-9-of-12, .grid > .col--pull-9-of-12, .grid > .col--10-of-12, .grid > .col--push-10-of-12, .grid > .col--pull-10-of-12, .grid > .col--11-of-12, .grid > .col--push-11-of-12, .grid > .col--pull-11-of-12, .grid > .col--12-of-12, .grid > .col--push-12-of-12, .grid > .col--pull-12-of-12, .grid > .col--2-of-2, .grid > .col--3-of-3, .grid > .col--4-of-4, .grid > .col--5-of-5, .grid > .col--6-of-6, .grid > .col--8-of-8, .grid > .col--12-of-12 {
+      .grid > *, .grid > .col--1-of-2, .grid > .col--push-1-of-2, .grid > .col--pull-1-of-2, .grid > .col--2-of-2, .grid > .col--push-2-of-2, .grid > .col--pull-2-of-2, .grid > .col--1-of-3, .grid > .col--push-1-of-3, .grid > .col--pull-1-of-3, .grid > .col--2-of-3, .grid > .col--push-2-of-3, .grid > .col--pull-2-of-3, .grid > .col--3-of-3, .grid > .col--push-3-of-3, .grid > .col--pull-3-of-3, .grid > .col--1-of-4, .grid > .col--push-1-of-4, .grid > .col--pull-1-of-4, .grid > .col--2-of-4, .grid > .col--push-2-of-4, .grid > .col--pull-2-of-4, .grid > .col--3-of-4, .grid > .col--push-3-of-4, .grid > .col--pull-3-of-4, .grid > .col--4-of-4, .grid > .col--push-4-of-4, .grid > .col--pull-4-of-4, .grid > .col--1-of-5, .grid > .col--push-1-of-5, .grid > .col--pull-1-of-5, .grid > .col--2-of-5, .grid > .col--push-2-of-5, .grid > .col--pull-2-of-5, .grid > .col--3-of-5, .grid > .col--push-3-of-5, .grid > .col--pull-3-of-5, .grid > .col--4-of-5, .grid > .col--push-4-of-5, .grid > .col--pull-4-of-5, .grid > .col--5-of-5, .grid > .col--push-5-of-5, .grid > .col--pull-5-of-5, .grid > .col--1-of-6, .grid > .col--push-1-of-6, .grid > .col--pull-1-of-6, .grid > .col--2-of-6, .grid > .col--push-2-of-6, .grid > .col--pull-2-of-6, .grid > .col--3-of-6, .grid > .col--push-3-of-6, .grid > .col--pull-3-of-6, .grid > .col--4-of-6, .grid > .col--push-4-of-6, .grid > .col--pull-4-of-6, .grid > .col--5-of-6, .grid > .col--push-5-of-6, .grid > .col--pull-5-of-6, .grid > .col--6-of-6, .grid > .col--push-6-of-6, .grid > .col--pull-6-of-6, .grid > .col--1-of-8, .grid > .col--push-1-of-8, .grid > .col--pull-1-of-8, .grid > .col--2-of-8, .grid > .col--push-2-of-8, .grid > .col--pull-2-of-8, .grid > .col--3-of-8, .grid > .col--push-3-of-8, .grid > .col--pull-3-of-8, .grid > .col--4-of-8, .grid > .col--push-4-of-8, .grid > .col--pull-4-of-8, .grid > .col--5-of-8, .grid > .col--push-5-of-8, .grid > .col--pull-5-of-8, .grid > .col--6-of-8, .grid > .col--push-6-of-8, .grid > .col--pull-6-of-8, .grid > .col--7-of-8, .grid > .col--push-7-of-8, .grid > .col--pull-7-of-8, .grid > .col--8-of-8, .grid > .col--push-8-of-8, .grid > .col--pull-8-of-8, .grid > .col--1-of-10, .grid > .col--push-1-of-10, .grid > .col--pull-1-of-10, .grid > .col--2-of-10, .grid > .col--push-2-of-10, .grid > .col--pull-2-of-10, .grid > .col--3-of-10, .grid > .col--push-3-of-10, .grid > .col--pull-3-of-10, .grid > .col--4-of-10, .grid > .col--push-4-of-10, .grid > .col--pull-4-of-10, .grid > .col--5-of-10, .grid > .col--push-5-of-10, .grid > .col--pull-5-of-10, .grid > .col--6-of-10, .grid > .col--push-6-of-10, .grid > .col--pull-6-of-10, .grid > .col--7-of-10, .grid > .col--push-7-of-10, .grid > .col--pull-7-of-10, .grid > .col--8-of-10, .grid > .col--push-8-of-10, .grid > .col--pull-8-of-10, .grid > .col--9-of-10, .grid > .col--push-9-of-10, .grid > .col--pull-9-of-10, .grid > .col--10-of-10, .grid > .col--push-10-of-10, .grid > .col--pull-10-of-10, .grid > .col--2-of-2, .grid > .col--3-of-3, .grid > .col--4-of-4, .grid > .col--5-of-5, .grid > .col--6-of-6, .grid > .col--8-of-8, .grid > .col--10-of-10 {
         display: block;
         margin-left: 0;
         margin-right: 0;
@@ -736,11 +757,33 @@ button {
   margin: 0;
   padding: 0; }
 
-logo {
-  display: block; }
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+#loading {
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10; }
+
+#loading img {
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  width: 3em;
+  height: 3em;
+  position: fixed;
+  top: 48%;
+  left: 50%; }
 
 a {
-  color: #1d4c53;
+  color: black;
   text-decoration: none; }
   a img {
     border: 0; }
@@ -750,22 +793,49 @@ a {
 .strike {
   position: relative; }
   .strike:after {
-    background: red;
+    background: #CB6A79;
     content: '';
     height: 12px;
     position: absolute;
-    top: 38%;
+    top: 35%;
     left: -5%;
     width: 110%; }
 
 section {
   display: table;
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding: 3em 0;
+  width: 100%; }
   section > div {
     display: table-cell;
     height: 100%;
     padding: 0 10%;
-    vertical-align: middle; }
+    position: relative;
+    vertical-align: middle;
+    width: 100%; }
+
+.strike-through {
+  text-align: center; }
+  .strike-through span {
+    display: inline-block;
+    position: relative; }
+    .strike-through span:before, .strike-through span:after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      width: 4.75em;
+      border-bottom: 7px solid #233F71;
+      top: 0.3em; }
+    .strike-through span:before {
+      right: 100%;
+      margin-right: 1em; }
+    .strike-through span:after {
+      left: 100%;
+      margin-left: 1em; }
+
+.centered {
+  display: block;
+  margin: 0 auto; }
 
 header nav ul li {
   display: inline-block;
@@ -774,49 +844,326 @@ header nav ul li {
   list-style: none;
   padding: 0 2em; }
 
-#landing header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; }
-  #landing header nav a {
-    font-weight: 700; }
+footer {
+  background: #0F2046;
+  color: #fff;
+  font-weight: 500;
+  padding: 3em; }
+  footer img {
+    display: block;
+    margin: 0 auto 2em; }
+  footer p {
+    border-bottom: 1px solid #d6d6d6;
+    font-weight: 500;
+    padding-bottom: 3em;
+    text-align: center; }
+  footer .grid {
+    margin: 2em 0; }
+  footer .icon {
+    height: 2em;
+    text-align: center; }
+    footer .icon.facebook {
+      background: url("../images/facebook_icon.png") no-repeat;
+      background-size: contain;
+      background-position: center center; }
+    footer .icon.email {
+      background: url("../images/email_icon.png") no-repeat;
+      background-size: contain;
+      background-position: center center; }
+    footer .icon.twitter {
+      background: url("../images/twitter_icon.png") no-repeat;
+      background-size: contain;
+      background-position: center center; }
 
-#landing h2 {
-  font-size: 3em;
-  line-height: 1.45em;
-  margin: 4em 0 1.25em;
-  text-transform: uppercase; }
-
-#landing form {
-  margin-top: 1.5em; }
-  #landing form input[type=text] {
-    background: rgba(0, 0, 0, 0.15);
-    padding: 0 1em; }
+#landing {
+  background: url("../images/landing_hero.png") no-repeat;
+  background-size: cover;
+  background-position: center top;
+  color: #fff; }
+  #landing header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 5% 0 10%;
+    width: 85%; }
+    #landing header #hamburger {
+      padding-top: 1em; }
+      #landing header #hamburger img {
+        height: 2em;
+        display: block; }
+    #landing header #logo {
+      color: #fff;
+      font-weight: 600;
+      font-size: 2em;
+      line-height: 2em;
+      padding: 0.25em 1em 0.25em 2em;
+      background: url("../images/logo.png") no-repeat;
+      background-size: contain;
+      background-position: left center; }
+    #landing header nav {
+      position: absolute;
+      top: 0;
+      right: 0; }
+      #landing header nav li {
+        vertical-align: middle; }
+      #landing header nav a {
+        color: #fff;
+        font-size: 1.25em; }
+  #landing h2 {
+    font-size: 2.75em;
+    line-height: 1.45em;
+    margin: 2em 0 1.25em;
+    text-transform: uppercase; }
+  #landing form {
+    font-size: .75em;
+    margin-top: 1.5em; }
+    #landing form input[type=email], #landing form input[type=submit] {
+      background: rgba(203, 106, 121, 0.6);
+      color: #fff;
+      font-size: 1.25em;
+      width: 30%;
+      padding: 0 1em;
+      display: inline-block; }
+    #landing form input[type=submit] {
+      background: #cb6a79;
+      margin-top: 1em;
+      width: auto; }
+    #landing form ::-webkit-input-placeholder {
+      color: #fff; }
+    #landing form :-moz-placeholder {
+      /* Firefox 18- */
+      color: #fff; }
+    #landing form ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #fff; }
+    #landing form :-ms-input-placeholder {
+      color: #fff; }
 
 #community h2 {
+  color: #233F71;
   margin-bottom: .75em; }
 
-#list {
-  min-height: auto;
+#community .video {
   text-align: center; }
-  #list h3 {
-    margin-bottom: .5em; }
+  #community .video iframe {
+    height: 14em;
+    width: 70%;
+    -webkit-box-shadow: 0px 0px 34px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 34px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 34px -9px rgba(0, 0, 0, 0.75); }
 
-#history header {
+#list {
+  background: #233F71;
+  color: #fff;
+  margin-bottom: -5%;
+  min-height: auto;
+  padding: 2em 0 4em;
   text-align: center;
-  text-transform: uppercase; }
-  #history header h4 {
-    font-weight: 200; }
-  #history header p {
-    font-size: 2em; }
+  transform: skew(0, 3.75deg);
+  position: relative; }
+  #list:before {
+    background: #233F71;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10em;
+    top: -3em;
+    transform: skew(0, -3.75deg); }
+  #list > * {
+    transform: skew(0, -3.75deg); }
+  #list h2 {
+    color: #fff; }
+  #list p {
+    width: 50%;
+    margin: 1em auto 0; }
 
-#history p {
-  font-weight: 200;
-  line-height: 1.4em; }
+#history {
+  background: url("../images/history_hero.png") no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  margin-bottom: -5em; }
+  #history header {
+    color: #233F71;
+    text-align: center;
+    text-transform: uppercase; }
+    #history header h1 {
+      border-bottom: 7px solid #233F71;
+      display: inline-block;
+      line-height: 1;
+      margin-bottom: .25em;
+      width: 2.529em; }
+    #history header h4 {
+      font-weight: 200; }
+    #history header p {
+      font-size: 2em; }
+  #history p {
+    font-weight: 200;
+    text-align: center;
+    width: 20em; }
 
 #faq {
-  min-height: auto; }
+  margin: 5em auto 2em;
+  min-height: auto;
+  width: 60%; }
+  #faq h2 {
+    color: #233F71; }
+  #faq article {
+    border-bottom: 1px solid #d6d6d6; }
+    #faq article .question, #faq article .answer {
+      position: relative; }
+      #faq article .question:before, #faq article .answer:before {
+        font-weight: 600;
+        position: absolute; }
+    #faq article .question {
+      font-size: 1.15em;
+      font-weight: 600;
+      margin: 2em 0 1em;
+      padding-left: 1.5em; }
+      #faq article .question:before {
+        content: 'Q:';
+        color: #233F71;
+        font-size: 2em;
+        position: absolute;
+        top: 3px;
+        left: -1em; }
+    #faq article .answer {
+      font-size: .9em;
+      font-weight: 200;
+      margin: 0 0 2em;
+      padding-left: 2.1em; }
+      #faq article .answer:before {
+        content: 'A:';
+        color: #233F71;
+        font-size: 2.7em;
+        top: 11px;
+        left: -.95em; }
+
+#bootcamp {
+  background: url("../images/bootcamp_hero.png") no-repeat;
+  background-size: cover;
+  margin-bottom: -18%;
+  padding: 6em 0 15em; }
+  #bootcamp h2 {
+    color: #233F71; }
+  #bootcamp p {
+    margin: 1em 0; }
+
+#bfw {
+  background: url("../images/sia_map.png") no-repeat, url("../images/sia_hero.png") no-repeat;
+  background-size: 70%, cover;
+  background-position: 150% 3em, center center;
+  color: #fff;
+  margin-bottom: -7%;
+  padding: 6em 0 9em; }
+  #bfw h2 {
+    color: #fff; }
+  #bfw p {
+    margin: 1em 0; }
+  #bfw .btn {
+    background: #233F71; }
+  #bfw .description, #bfw .map {
+    vertical-align: middle; }
+
+#vc3 {
+  background: url("../images/vc3_hero.png") no-repeat;
+  background-size: cover;
+  padding: 6em 0 9em;
+  margin-bottom: -5em; }
+  #vc3 .description, #vc3 .logos {
+    vertical-align: middle; }
+  #vc3 .description {
+    padding-right: 1em; }
+    #vc3 .description p {
+      margin: 1em 0; }
+  #vc3 .logos {
+    background: url("../images/vc3_logos.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 100%; }
+  #vc3 h2 {
+    color: #233F71; }
+
+#summit {
+  background: url("../images/summit_hero.png") no-repeat;
+  background-size: cover;
+  color: #fff;
+  margin-bottom: -5em;
+  padding: 5em 0 6em; }
+  #summit h2 {
+    color: #fff; }
+  #summit p {
+    margin: 1em 0; }
+  #summit .activity div:last-of-type {
+    color: #fff;
+    line-height: 1.75em; }
+
+#contact {
+  background: url("../images/contact_us_hero.png") no-repeat;
+  background-size: cover;
+  color: #fff; }
+  #contact p {
+    font-weight: 400; }
+  #contact h2 {
+    color: #fff; }
+  #contact form {
+    margin-top: 2em; }
+    #contact form .field {
+      width: 100%; }
+    #contact form input[type=text] {
+      background: none;
+      border-bottom: 3px solid #fff;
+      color: #fff; }
+    #contact form ::-webkit-input-placeholder {
+      color: #fff; }
+    #contact form :-moz-placeholder {
+      /* Firefox 18- */
+      color: #fff; }
+    #contact form ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #fff; }
+    #contact form :-ms-input-placeholder {
+      color: #fff; }
+    #contact form .btn {
+      margin-top: 2.5em;
+      width: 50%; }
+
+.activity {
+  width: 80%;
+  margin: 0 auto; }
+  .activity div:last-of-type {
+    color: #233F71;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 5em;
+    padding-left: 1.5em;
+    vertical-align: middle; }
+  .activity .icon {
+    height: 8.7em;
+    vertical-align: middle; }
+  .activity.teams .icon {
+    background: url("../images/teams_icon.png") no-repeat;
+    background-size: contain;
+    background-position: center center; }
+  .activity.problems .icon {
+    background: url("../images/problems_icon.png") no-repeat;
+    background-size: contain;
+    background-position: center center; }
+  .activity.presentation .icon {
+    background: url("../images/presentation_icon.png") no-repeat;
+    background-size: contain;
+    background-position: center center; }
+  .activity.calendar .icon {
+    background: url("../images/calendar_icon.png") no-repeat;
+    background-size: contain;
+    background-position: center center; }
+  .activity.group .icon {
+    background: url("../images/group_icon.png") no-repeat;
+    background-size: contain;
+    background-position: center center; }
+  .activity.location .icon {
+    background: url("../images/location_icon.png") no-repeat;
+    background-size: contain;
+    background-position: center center; }
 
 @media screen and (max-width: 700px) {
   results {

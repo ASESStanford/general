@@ -48,7 +48,7 @@ $grid-column-namespace: "col";
 // $col-groups are the column groups you want
 // For example, $col-groups: (3, 4, 5) will output:
 // .grid__col--n-of-3, .grid__col--n-of-4, [...]
-$col-groups: (2, 3, 4, 5, 6, 8, 12);
+$col-groups: (2, 3, 4, 5, 6, 8, 10);
 
 // Gutter width
 $gutter-width: 20px;

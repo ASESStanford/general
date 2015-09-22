@@ -4,6 +4,8 @@ input, button {
 	line-height: 2em;
 	vertical-align: middle;
 	outline: none;
+	display: block;
+	width: 100%;
 }
 
 input[type=text] {

@@ -1,0 +1,39 @@
+footer {
+  background: $blue-dark;
+  color: $white;
+  font-weight: 500;
+  padding: 3em;
+
+  img {
+    display: block;
+    margin: 0 auto 2em;
+  }
+  p {
+    border-bottom: 1px solid $grey-light;
+    font-weight: 500;
+    padding-bottom: 3em;
+    text-align: center;
+  }
+  .grid {
+    margin: 2em 0;
+  }
+  .icon {
+    height: 2em;
+    text-align: center;
+    &.facebook {
+      background: url('../images/facebook_icon.png') no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+    &.email {
+      background: url('../images/email_icon.png') no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+    &.twitter {
+      background: url('../images/twitter_icon.png') no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+  }
+}
