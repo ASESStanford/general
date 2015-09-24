@@ -874,41 +874,39 @@ footer {
       background: url("../images/twitter_icon.png") no-repeat;
       background-size: contain;
       background-position: center center; }
+    footer .icon a {
+      display: block;
+      height: 2em;
+      width: 100%; }
+
+#global-nav {
+  background: rgba(35, 63, 113, 0.85);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5; }
+  #global-nav header nav li {
+    margin-top: 2em; }
+  #global-nav a {
+    color: #fff;
+    font-size: 1em; }
+  #global-nav nav li {
+    list-style: none;
+    line-height: 3em;
+    text-align: center; }
+    #global-nav nav li a {
+      font-size: 2em; }
+  #global-nav b {
+    font-weight: 600; }
+    #global-nav b a {
+      color: #CB6A79; }
 
 #landing {
   background: url("../images/landing_hero.png") no-repeat;
   background-size: cover;
   background-position: center top;
   color: #fff; }
-  #landing header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0 5% 0 10%;
-    width: 85%; }
-    #landing header #hamburger {
-      padding-top: 1em; }
-      #landing header #hamburger img {
-        height: 2em;
-        display: block; }
-    #landing header #logo {
-      color: #fff;
-      font-weight: 600;
-      font-size: 2em;
-      line-height: 2em;
-      padding: 0.25em 1em 0.25em 2em;
-      background: url("../images/logo.png") no-repeat;
-      background-size: contain;
-      background-position: left center; }
-    #landing header nav {
-      position: absolute;
-      top: 0;
-      right: 0; }
-      #landing header nav li {
-        vertical-align: middle; }
-      #landing header nav a {
-        color: #fff;
-        font-size: 1.25em; }
   #landing h2 {
     font-size: 2.75em;
     line-height: 1.45em;
@@ -938,6 +936,37 @@ footer {
       color: #fff; }
     #landing form :-ms-input-placeholder {
       color: #fff; }
+
+#landing header, #global-nav header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 5% 0 10%;
+  width: 85%; }
+  #landing header .hamburger, #global-nav header .hamburger {
+    padding-top: 1em; }
+    #landing header .hamburger img, #global-nav header .hamburger img {
+      height: 2em;
+      display: block; }
+  #landing header .logo, #global-nav header .logo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 2em;
+    padding: 0.25em 1em 0.25em 2em;
+    background: url("../images/logo.png") no-repeat;
+    background-size: contain;
+    background-position: left center;
+    text-align: left; }
+  #landing header nav, #global-nav header nav {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #landing header nav li, #global-nav header nav li {
+      vertical-align: middle; }
+    #landing header nav a, #global-nav header nav a {
+      color: #fff;
+      font-size: 1.25em; }
 
 #community h2 {
   color: #233F71;
@@ -1017,7 +1046,7 @@ footer {
     #faq article .question {
       font-size: 1.15em;
       font-weight: 600;
-      margin: 2em 0 1em;
+      margin: 2em 0 1em 2em;
       padding-left: 1.5em; }
       #faq article .question:before {
         content: 'Q:';
@@ -1029,7 +1058,7 @@ footer {
     #faq article .answer {
       font-size: .9em;
       font-weight: 200;
-      margin: 0 0 2em;
+      margin: 0 0 2em 2.5em;
       padding-left: 2.1em; }
       #faq article .answer:before {
         content: 'A:';
@@ -1165,11 +1194,59 @@ footer {
     background-size: contain;
     background-position: center center; }
 
-@media screen and (max-width: 700px) {
-  results {
-    height: 100vh; }
-    results #map {
-      height: 30vh; }
-    results container {
-      height: auto;
-      min-height: 70vh; } }
+@media screen and (max-width: 1050px) {
+  .activity div:last-of-type {
+    line-height: 1.25em; } }
+
+@media screen and (max-width: 875px) {
+  .desktop {
+    display: none !important; }
+  #landing header nav li a:not(.hamburger) {
+    display: none; }
+  #landing header .hamburger {
+    margin-top: 0;
+    display: block; }
+  #global-nav header .hamburger {
+    margin-top: -1.5em;
+    display: block; }
+  #history {
+    margin-bottom: 0; }
+  #history p {
+    width: auto; }
+  #history header h1 {
+    font-size: 5em;
+    width: 2.5em; }
+  .strike-through span:before {
+    margin-right: .25em; }
+  .strike-through span:after {
+    margin-left: .25em; }
+  .strike-through span:before, .strike-through span:after {
+    width: 1.75em; }
+  section {
+    padding: 1em 0; }
+  #bootcamp {
+    margin-bottom: -31%; }
+  #bfw {
+    margin-bottom: -13%; }
+  #community .video {
+    margin: 2em 0 5em; }
+    #community .video iframe {
+      width: 100%; }
+  #list p {
+    width: 90%; }
+  #faq {
+    width: 100%; }
+  #contact form .btn, .btn {
+    width: 100%;
+    text-align: center; }
+  footer .icon {
+    display: inline-block !important;
+    margin: 1.5em 0.5em !important;
+    width: 2em !important;
+    height: 2em; }
+  #summit {
+    padding: 5em 0 11em; }
+  #landing .hamburger {
+    position: absolute;
+    top: 0;
+    right: 1.5em; } }

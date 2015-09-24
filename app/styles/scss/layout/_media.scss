@@ -1,13 +1,81 @@
-@media screen and (max-width: 700px) {
-	results {
-		height: 100vh;
+@media screen and (max-width: $breakpoint-med) {
+	.activity div:last-of-type {
+		line-height: 1.25em;
+	}
+}
 
-		#map {
-			height: 30vh;
+@media screen and (max-width: $breakpoint-sm) {
+	.desktop {
+		display: none !important;
+	}
+	#landing header nav li a:not(.hamburger) {
+		display: none;
+	}
+	#landing header .hamburger {
+		margin-top: 0;
+		display: block;
+	}
+	#global-nav header .hamburger {
+		margin-top: -1.5em;
+		display: block;
+	}
+	#history {
+		margin-bottom: 0;
+	}
+	#history p {
+		width: auto;
+	}
+	#history header h1 {
+		font-size: 5em;
+		width: 2.5em;
+	}
+	.strike-through span:before {
+		margin-right: .25em;
+	}
+	.strike-through span:after {
+		margin-left: .25em;
+	}
+	.strike-through span:before, .strike-through span:after {
+		width: 1.75em;
+	}
+	section {
+		padding: 1em 0;
+	}
+	#bootcamp {
+		margin-bottom: -31%;
+	}
+	#bfw {
+		margin-bottom: -13%;
+	}
+	#community .video {
+		margin: 2em 0 5em;
+
+		iframe {
+			width: 100%;
 		}
-		container {
-			height: auto;
-			min-height: 70vh;
-		}
+	}
+	#list p {
+		width: 90%;
+	}
+	#faq {
+		width: 100%;
+	}
+	#contact form .btn, .btn {
+		width: 100%;
+		text-align: center;
+	}
+	footer .icon {
+		display: inline-block !important;
+		margin: 1.5em .5em !important;
+		width: 2em !important;
+		height: 2em;
+	}
+	#summit {
+		padding: 5em 0 11em;
+	}
+	#landing .hamburger {
+		position: absolute;
+		top: 0;
+		right: 1.5em;
 	}
 }
