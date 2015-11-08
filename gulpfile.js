@@ -18,21 +18,18 @@ gulp.task('browser-sync', function() {
 gulp.task('scripts', function() {
   gulp.src([app + 'scripts/**/*.js', app + 'scripts/*.js'])
     .pipe(gulp.dest('dist/js'))
-    .pipe(gulp.dest(flask + 'static/js'))
 	browserSync.reload();
 });
 
 gulp.task('fonts', function() {
   gulp.src([app + 'fonts/**/*.*', app + 'scripts/*.*'])
     .pipe(gulp.dest('dist/fonts'))
-    .pipe(gulp.dest(flask + 'static/fonts'))
 	browserSync.reload();
 });
 
 gulp.task('images', function() {
   gulp.src([app + 'images/**/*.*', app + 'scripts/*.*'])
     .pipe(gulp.dest('dist/images'))
-    .pipe(gulp.dest(flask + 'static/images'))
 	browserSync.reload();
 });
 
@@ -40,18 +37,17 @@ gulp.task('sass', function() {
   gulp.src(app + 'styles/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('dist/css'))
-    .pipe(gulp.dest(flask + 'static/css'))
+    .pipe(gulp.dest(app + 'css'))
     .pipe(livereload());
 });
 
 gulp.task('html', function() {
   gulp.src(app + 'index.html')
     .pipe(gulp.dest('dist'))
-    .pipe(gulp.dest(flask + 'templates'))
 	browserSync.reload();
 });
 
-gulp.task('default', ['browser-sync', 'fonts', 'html', 'scripts', 'images'], function() {
+gulp.task('default', ['sass', 'browser-sync', 'fonts', 'html', 'scripts', 'images'], function() {
   livereload.listen();
   gulp.watch(app + 'styles/**/*.scss', ['sass']);
   gulp.watch(app + 'scripts/**/*.js', ['scripts']);
